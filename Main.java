@@ -24,14 +24,14 @@ public class perSon {
 		// TODO Auto-generated method stub
 	       String[] strArray=new String[20000];
 	        int i=0;
-			InputStream is = new FileInputStream("/Users/ann/eclipse-workspace/FindPerson/src/com/Person/Homework1In.txt");
+			InputStream is = new FileInputStream(args[0]);
 	        String line; // 用来保存每行读取的内容
 	        BufferedReader reader = new BufferedReader(new InputStreamReader(is,"UTF-8"));
 	        line = reader.readLine(); // 读取第一行
 	        strArray[i]=line;
 	        i++;
 
-			FileOutputStream os = new FileOutputStream("/Users/ann/eclipse-workspace/FindPerson/src/com/Person/Homework1Out.txt");
+			FileOutputStream os = new FileOutputStream(args[1]);
 	        //String line; // 用来保存每行读取的内容
 	        OutputStreamWriter writer = new OutputStreamWriter(os, "UTF-8");
 	        
